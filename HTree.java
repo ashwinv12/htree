@@ -130,6 +130,8 @@ public class HTree {
  		g.drawLine(x1, y1, x2, y2);
  		
  		// reduction step
+ 		recursiveDraw(n-1, x1, y1, halfLength);
+ 		recursiveDraw(n-1, x2, y2, halfLength);
  		
  		// vertical right
  		x1 = a + halfLength;
@@ -137,7 +139,8 @@ public class HTree {
  		g.drawLine(x1, y1, x2, y2);
 
  		// reduction step
-
+ 		recursiveDraw(n-1, x1, y1, halfLength);
+ 		recursiveDraw(n-1, x2, y2, halfLength);
  	}
 
 
